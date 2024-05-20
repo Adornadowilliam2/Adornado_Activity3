@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/landingPage">
+
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.example.adornado_activity3.LandingPage"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" />
+<!--    Connected to Fahrenheit, Php and Centimeter -->
+    <fragment
+        android:id="@+id/converters"
+        android:name="com.example.adornado_activity3.Converters"
+        android:label="Converters"
+        tools:layout="@layout/fragment_converters">
+        <action
+            android:id="@+id/action_converters_to_celsiusToFarenheit"
+            app:destination="@id/celsiusToFarenheit" />
+        <action
+            android:id="@+id/action_converters_to_phpToUsd"
+            app:destination="@id/phpToUsd" />
+        <action
+            android:id="@+id/action_converters_to_inchToCentimeter2"
+            app:destination="@id/inchToCentimeter" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/moneyChanger"
+        android:name="com.example.adornado_activity3.MoneyChanger"
+        android:label="fragment_money_changer"
+        tools:layout="@layout/fragment_money_changer"/>
+    <fragment
+        android:id="@+id/celsiusToFarenheit"
+        android:name="com.example.adornado_activity3.CelsiusToFahrenheit"
+        android:label="fragment_celsius_to_farenheit"
+        tools:layout="@layout/fragment_celsius_to_farenheit" />
+    <fragment
+        android:id="@+id/inchToCentimeter"
+        android:name="com.example.adornado_activity3.InchToCentimeter"
+        android:label="fragment_inch_to_centimeter"
+        tools:layout="@layout/fragment_inch_to_centimeter" />
+    <fragment
+        android:id="@+id/phpToUsd"
+        android:name="com.example.adornado_activity3.PhpToUsd"
+        android:label="fragment_php_to_usd"
+        tools:layout="@layout/fragment_php_to_usd" />
+</navigation>

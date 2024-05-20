@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Converters">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCelToFahren"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/celsius_to_fahrenheit_fahrenheit_to_celsius"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnInchToCent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/inch_to_centimeter_centimeter_to_inch"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="@+id/btnCelToFahren"
+                app:layout_constraintStart_toStartOf="@+id/btnCelToFahren"
+                app:layout_constraintTop_toBottomOf="@+id/btnCelToFahren" />
+
+            <Button
+                android:id="@+id/btnPHPToUSD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/php_to_usd_usd_to_php"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="@+id/btnInchToCent"
+                app:layout_constraintStart_toStartOf="@+id/btnInchToCent"
+                app:layout_constraintTop_toBottomOf="@+id/btnInchToCent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="numberOfP1000"
+            type="String" />
+        <variable
+            name="numberOfP500"
+            type="String" />
+        <variable
+            name="numberOfP200"
+            type="String" />
+        <variable
+            name="numberOfP100"
+            type="String" />
+        <variable
+            name="numberOfP50"
+            type="String" />
+        <variable
+            name="numberOfP20"
+            type="String" />
+        <variable
+            name="numberOfP10"
+            type="String" />
+        <variable
+            name="numberOfP5"
+            type="String" />
+        <variable
+            name="numberOfP1"
+            type="String" />
+    </data>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MoneyChanger">
+
+        <TextView
+            android:id="@+id/TextNum5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="114dp"
+            android:text="@string/number_of_p5"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum10" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#1447FF"
+            android:text="@string/enter_any_amount_whole_number_only"
+            android:textColor="#FFFDFD"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputAmount"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="1dp"
+            android:hint="@string/enter_a_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TextContrastCheck"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="294dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="11dp"
+            android:text="@string/compute"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InputAmount" />
+
+        <TextView
+            android:id="@+id/TextNum1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="89dp"
+            android:text="@string/number_of_p1000"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum1000"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InputAmount" />
+
+        <TextView
+            android:id="@+id/TextNum200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="98dp"
+            android:text="@string/number_of_p200"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum200"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum500" />
+
+        <TextView
+            android:id="@+id/TextNum500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="97dp"
+            android:text="@string/number_of_p500"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum500"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum1000" />
+
+        <TextView
+            android:id="@+id/TextNum100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="98dp"
+            android:text="@string/number_of_p100"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum100"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum200" />
+
+        <TextView
+            android:id="@+id/TextNum50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="106dp"
+            android:text="@string/number_of_p50"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum50"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum100" />
+
+        <TextView
+            android:id="@+id/TextNum20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="106dp"
+            android:text="@string/number_of_p20"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum50" />
+
+        <TextView
+            android:id="@+id/TextNum10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="106dp"
+            android:text="@string/number_of_p10"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum20" />
+
+        <TextView
+            android:id="@+id/TextNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="118dp"
+            android:text="@string/number_of_p1"
+            app:layout_constraintEnd_toStartOf="@+id/ResultNum1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextNum5" />
+
+<!--   Result Content     -->
+
+        <TextView
+            android:id="@+id/ResultNum1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP1000}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCompute"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP500}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum1000"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP200}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum500"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP100}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum200"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP50}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum100"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP20}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum50"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP10}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum20"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP5}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum10"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/ResultNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="62dp"
+            android:text="@{numberOfP1}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResultNum5"
+            tools:text="0" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+</layout>

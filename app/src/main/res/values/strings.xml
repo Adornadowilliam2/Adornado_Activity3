@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Adornado_Activity3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!!</string>
+    <string name="Welcome">Welcome!! 😊😊</string>
+    <string name="how_to_destroy_your_pc_lol">How to destroy your PC. lol</string>
+    <string name="how_to_unfreeze_yourself">How to unfreeze yourself</string>
+    <string name="landing_page">Landing Page</string>
+    <string name="converters">Converters</string>
+    <string name="money_changer">Money Changer</string>
+    <string name="celcius_to_farenheit_farenheit_to_celcius">Celcius to Farenheit/ Farenheit to Celcius</string>
+    <string name="inch_to_centimeter_centimeter_to_inch">Inch to Centimeter/ Centimeter to Inch</string>
+    <string name="php_to_usd_usd_to_php">PHP to USD/ USD to PHP</string>
+    <string name="celsius_to_fahrenheit_fahrenheit_to_celsius">Celsius to Fahrenheit/ Fahrenheit to Celsius</string>
+    <string name="enter_a_number">Enter a number:</string>
+    <string name="input_a_num">Input a num</string>
+    <string name="celsius_to_fahrenheit">Celsius to Fahrenheit</string>
+    <string name="fahrenheit_to_celsius">Fahrenheit to Celsius</string>
+    <string name="space" />
+    <string name="result">Result:</string>
+    <string name="_0">0</string>
+    <string name="centimeter_to_inch">centimeter to inch</string>
+    <string name="inch_to_centimer">Inch to centimer</string>
+    <string name="php_to_usd">Php to Usd</string>
+    <string name="usd_to_php">Usd to Php</string>
+    <string name="enter_number">Enter number</string>
+    <string name="output_text">Invalid input</string>
+    <string name="enter_any_amount_whole_number_only">Enter any amount (whole number only)</string>
+    <string name="compute">Compute</string>
+    <string name="number_of_p5">Number of P5</string>
+    <string name="number_of_p1000">Number of P1000</string>
+    <string name="number_of_p200">Number of P200</string>
+    <string name="number_of_p100">Number of P100</string>
+    <string name="number_of_p50">Number of P50</string>
+    <string name="number_of_p20">Number of P20</string>
+    <string name="number_of_p10">Number of P10</string>
+    <string name="number_of_p1">Number of P1</string>
+    <string name="number_of_p500">Number of P500</string>
+    <string name="how_to_unfreeze_youself">how to unfreeze youself</string>
+    <string name="aidevelop">aidevelop</string>
+    <string name="tekkenbeingtekken">tekkenbeingtekken</string>
+    <string name="dollarsign">$</string>
+    <string name="pesosign">P</string>
+</resources>
